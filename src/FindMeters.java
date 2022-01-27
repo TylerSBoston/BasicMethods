@@ -3,15 +3,15 @@ import java.util.Scanner;
 public class FindMeters {
 
 	
-	public static float GetKM(Scanner input)
+	public static float getKiloMeters(Scanner input)
 	{
 		System.out.println("Enter an amount of KMs: ");
-		float KM = input.nextFloat();
+		float KM = Lander.verifyFloat(input);
 		return KM;
 	}
-	public static void GetM(float KM)
+	public static void getMeters(float kiloMeter)
 	{
-		System.out.println(KM + "KM is: " + (KM*1000) + "M");
+		System.out.println(kiloMeter + "KM is: " + (kiloMeter*1000) + "M");
 	}
 	
 }

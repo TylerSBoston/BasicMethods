@@ -2,15 +2,15 @@ import java.util.Scanner;
 
 public class FindFarenheit {
 	
-	public static float GetCelcius(Scanner input)
+	public static float getCelcius(Scanner input)
 	{
 		System.out.println("Enter a Celcius Tempurature: ");
-		float Celcius = input.nextFloat();
-		return Celcius;
+		float celcius = Lander.verifyFloat(input);
+		return celcius;
 	}
-	public static void GetFarenheit(float Celcius)
+	public static void getFarenheit(float celcius)
 	{
-		System.out.println(Celcius + " Celcius in Farenheight is: " + (Celcius*1.8 + 32));
+		System.out.println(celcius + " Celcius in Farenheight is: " + (celcius*1.8 + 32));
 	}
 	
 	
