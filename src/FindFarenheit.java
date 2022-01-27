@@ -10,7 +10,7 @@ public class FindFarenheit {
 	}
 	public static void getFarenheit(float celcius)
 	{
-		System.out.println(celcius + " Celcius in Farenheight is: " + (celcius*1.8 + 32));
+		System.out.println(celcius + " Celcius in Farenheight is: " + (celcius * 1.8 + 32));
 	}
 	
 	

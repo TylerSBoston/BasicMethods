@@ -12,7 +12,6 @@ public class Lander {
 	}
 	
 	public static void LandHere()
-	// No Input Verification
 	{
 		int userInput = 6;
 		Scanner input = new Scanner(System.in);
@@ -49,38 +48,23 @@ public class Lander {
 	{
 		int number = 0;
 		if(input.hasNextInt())
-		{
 			number = input.nextInt();
-			input.nextLine();
-		}
-		else
-			input.nextLine();
-		
-		
-		
+		input.nextLine();
 		return number;
 	}
 	public static int verifyInt(Scanner input, int baseNumber)
 	{
 		if(input.hasNextInt())
-		{
 			baseNumber = input.nextInt();
-			input.nextLine();
-		}
-		else
-			input.nextLine();
+		input.nextLine();
 		return baseNumber;
 	}
 	public static float verifyFloat(Scanner input)
 	{
 		float number = 0;
 		if(input.hasNextFloat())
-		{
 			number = input.nextFloat();
-			input.nextLine();
-		}
-		else
-			input.nextLine();
+		input.nextLine();
 		return number;
 	}
 	public static String verifyString(Scanner input)

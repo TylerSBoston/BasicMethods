@@ -12,6 +12,6 @@ public class HalfNumber {
 	
 	public static void getHalfNumber(float number)
 	{
-		System.out.println("Halfe of " + number + " is " + (number/2));
+		System.out.println("Halfe of " + number + " is " + (number / 2));
 	}
 }

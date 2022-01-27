@@ -11,7 +11,7 @@ public class FindMeters {
 	}
 	public static void getMeters(float kiloMeter)
 	{
-		System.out.println(kiloMeter + "KM is: " + (kiloMeter*1000) + "M");
+		System.out.println(kiloMeter + "KM is: " + (kiloMeter * 1000) + "M");
 	}
 	
 }
