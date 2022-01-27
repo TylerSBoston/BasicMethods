@@ -5,7 +5,7 @@ public class FindAsciiValue {
 	public static char getLetter(Scanner input)
 	{
 		System.out.println("Enter a character");
-		String FirstLetter = Lander.verifyString(input);
+		String FirstLetter = InputVerifier.verifyString(input);
 		char letter = FirstLetter.charAt(0);
 		return letter;
 	}

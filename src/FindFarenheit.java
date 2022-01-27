@@ -5,7 +5,7 @@ public class FindFarenheit {
 	public static float getCelcius(Scanner input)
 	{
 		System.out.println("Enter a Celcius Tempurature: ");
-		float celcius = Lander.verifyFloat(input);
+		float celcius = InputVerifier.verifyFloat(input);
 		return celcius;
 	}
 	public static void getFarenheit(float celcius)

@@ -12,7 +12,7 @@ public class FindSquare {
 	public static float getNumber(Scanner input)
 	{
 		System.out.println("Enter a Number");	
-		float number =  Lander.verifyFloat(input);
+		float number =  InputVerifier.verifyFloat(input);
 		return number;
 	}
 	public static void getSquare(Scanner input)
