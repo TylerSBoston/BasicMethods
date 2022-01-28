@@ -1,3 +1,4 @@
+import java.util.LinkedList;
 import java.util.Scanner;
 
 public class AddingMath {
@@ -114,6 +115,43 @@ public class AddingMath {
 		}
 		
 		return output;
+		
+		
+	}
+	public static void getInputedNumbers(Scanner input)
+	{
+		LinkedList<Double> numbers = new LinkedList<Double>();
+		boolean done = false;
+		System.out.println("Enter some Numbers, Press Y when done");
+		while(done == false)
+		{
+			// can probably be more efficient, coming back if time
+			if(input.hasNextDouble())
+			{	
+				// Ignores numbers after junk inputs
+				do
+				{
+						numbers.add(input.nextDouble());
+				}while (input.hasNextDouble());
+					input.nextLine();
+			}
+			else if(input.nextLine().charAt(0)=='Y')
+			{
+				done = true;
+			}
+		}
+		Double total = addInputedNumbers(numbers);
+		if(total != null)
+			System.out.println("The values you entered total to " + total);
+	}
+	public static Double addInputedNumbers(LinkedList<Double> numbers)
+	{
+		double total = 0;
+		for(Double f : numbers)
+		{
+			total += f;
+		}
+		return total;
 		
 		
 	}

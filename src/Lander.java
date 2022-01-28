@@ -30,6 +30,7 @@ public class Lander {
 					+ "10: Find if Prime\n"
 					+ "11: Some of Digits\n"
 					+ "12: fibonacci numbers\n"
+					+ "13: Add All imputed Values"
 					+ "0: exit\n"
 					+ "You may need to scroll up for previous answers\n");
 			
@@ -84,6 +85,9 @@ public class Lander {
 	            	AddingMath.fibonacciNumbers(input);
 	            	userInput = -1;
        		 		break;
+	            case 13:
+	            	AddingMath.getInputedNumbers(input);
+	            	userInput = -1;
 	            case 0: 
             		 break;
 	            default: 
