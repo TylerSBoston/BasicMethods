@@ -5,7 +5,7 @@ public class FindMeters {
 	
 	public static float getKiloMeters(Scanner input)
 	{
-		System.out.println("Enter an amount of KMs: ");
+		System.out.println("Enter an amount of kiloMeterss: ");
 		float kiloMeter = InputVerifier.verifyFloat(input);
 		return kiloMeter;
 	}

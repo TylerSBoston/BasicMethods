@@ -57,7 +57,7 @@ public class Lander {
             		userInput = -1;
                     break;
 	            case 6: 
-	            	FindGreatestNumber.getGreatestNumber(input);
+	            	FindGreatestNumber.findGreatestNumber(input);
 	            	userInput = -1;
        		 		break;
 	            case 7: 

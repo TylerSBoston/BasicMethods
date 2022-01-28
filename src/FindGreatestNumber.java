@@ -1,8 +1,9 @@
 
 import java.util.*;
 
-public class FindGreatestNumber {
-	public static void getGreatestNumber(Scanner input)
+public class FindGreatestNumber 
+{
+	public static void findGreatestNumber(Scanner input)
 	{
 		LinkedList<Double> numbers = new LinkedList<Double>();
 		boolean done = false;
@@ -24,16 +25,26 @@ public class FindGreatestNumber {
 				done = true;
 			}
 		}
+		Double biggestNumber = getGreatestNumber(numbers);
+		if(biggestNumber != null)
+			System.out.println("The biggest number you entered is: " + biggestNumber);
+		else
+			System.out.println("No valid numbers entered");
+	}
+	public static Double getGreatestNumber(LinkedList<Double> numbers)
+	{
 		Double biggestNumber = Double.MIN_VALUE;
 		for(Double f : numbers)
 		{
 			if(f>biggestNumber)
 				biggestNumber = f;
 		}
-		//assumes nobody enters the min_value
-		if(biggestNumber != Double.MIN_VALUE)
-			System.out.println("The biggest number you entered is: " + biggestNumber);
+		if(biggestNumber == Double.MIN_VALUE)
+			return null;
 		else
-			System.out.println("No valid numbers entered");
-		}
+			return biggestNumber;
+		
+		
+	}
+	
 }
